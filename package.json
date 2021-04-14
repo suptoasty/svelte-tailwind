@@ -19,6 +19,7 @@
     "vite": "^2.1.5"
   },
   "dependencies": {
+    "@now/build-utils": "^2.7.0",
     "@vercel/node": "^1.9.1",
     "sass": "^1.32.8",
     "svelte-materialify": "^0.3.10",
