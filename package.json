@@ -19,6 +19,7 @@
     "vite": "^2.1.5"
   },
   "dependencies": {
+    "@vercel/node": "^1.9.1",
     "sass": "^1.32.8",
     "svelte-materialify": "^0.3.10",
     "svelte-navigator": "^3.1.5"
