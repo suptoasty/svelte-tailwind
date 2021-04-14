@@ -1,0 +1,39 @@
+/* Write your global styles here, in PostCSS syntax */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	body {
+		@apply bg-white dark:bg-gray-700;
+		@apply text-black dark:text-white;
+	}
+
+	button {
+		font-family: inherit;
+		font-size: inherit;
+		/* Using Tailwind classes directly on your HTML elements is recommended over @apply. */
+		@apply py-4 px-8;
+		@apply text-blue-500 dark:text-green-700;
+		@apply bg-blue-600 dark:bg-green-400 bg-opacity-10;
+		@apply rounded-full dark:rounded-2xl;
+		@apply border-2 border-transparent;
+		@apply outline-none;
+		@apply w-48;
+		font-variant-numeric: tabular-nums;
+		cursor: pointer;
+	}
+
+	button:disabled {
+		@apply bg-gray-500 dark:bg-gray-400 bg-opacity-0;
+	}
+
+	button:focus {
+		@apply border-opacity-100;
+	}
+
+	button:active {
+		@apply bg-blue-500 dark:bg-green-500 bg-opacity-20;
+	}
+}
