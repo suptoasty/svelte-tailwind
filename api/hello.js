@@ -24,7 +24,7 @@ export default async (req, res) => {
 			collections = collections.concat(page)
 		})
 
-		res.status(200).send({ collections })
+		res.json({ collections })
 	} catch (error) {
 		res.status(500).json({ error })
 	}
