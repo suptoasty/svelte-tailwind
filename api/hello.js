@@ -14,6 +14,7 @@ export default async (req, res) => {
 		let collections = []
 
 		if (!client) {
+			console.log(client)
 			return res
 				.status(500)
 				.json({ error: new Error("Missing secret to connect to FaunaDB") })
