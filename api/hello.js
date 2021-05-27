@@ -11,6 +11,8 @@ if (secret) {
 
 export default async (req, res) => {
 	try {
+		console.log(req, client, secret)
+
 		let collections = []
 
 		if (!client) {
